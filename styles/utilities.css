@@ -1,0 +1,173 @@
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    /* forget to add height earlier */
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.outline-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+
+}
+
+.btn-dark {
+    background-color: var(--dark-color);
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+/* backgrounds */
+.bg-primary,
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.bg-light,
+.btn-ligt{
+    background-color: var(--light-color);
+    color: #333;
+}
+
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: #fff;
+}
+
+
+
+/* texts */
+
+.text-center {
+    text-align: center;
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.lead {
+    font-size: 1.25rem;
+}
+.sm {
+    font-size: 1rem;
+}
+.md {
+    font-size: 2rem;
+}
+.lg{
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
+
+/* Margin  & Paddings*/
+
+.margin-y1{
+ margin: 1rem 0;
+}
+
+.margin-y2{
+    margin: 1.5rem 0;
+   }
+
+.margin-y3{
+    margin: 2rem 0 ;
+   }
+
+.margin-y4{
+    margin: 3rem 0 ;
+   }
+
+.margin-y5{
+    margin: 4rem 0 ;
+   }
+   
+
+.padding-y1 {
+    padding: 1rem 0;
+}
+
+.padding-y2 {
+    padding: 1.5rem 0;
+}
+
+.padding-y2rem {
+    padding: 2rem 0;
+}
+
+.padding-y3 {
+    padding : 4rem 0;
+}
+
+.padding-y25rem {
+    padding: 2.5rem;
+}
+
+.padding-xy2 {
+    padding: 2rem;
+}
