@@ -68,7 +68,7 @@ img{
     margin: 0 5px;
 }
 
-.navbar a:hover {
+.navbar ul a:hover {
     border-bottom: 2px solid #fff;
 }
 
@@ -194,8 +194,7 @@ img{
 .languages .card {
     margin: 18px 10px 40px;
     transition: transform 0.2s ease-in;
-    /* text-align: center; - all cards, text are centarally aligned so, we can classify the class text-center to that element in html file or 
-    can select the tag and style it in css in one go */
+   
 }
 
 .languages .card h4 {
@@ -300,5 +299,59 @@ code , pre {
     padding: 10px;
 }
 
+@media screen and (max-width: 1000px) {
+    .showcase-form {
+        width: 300px;
+    }
+}
 
-/* Tablet 768px*/
+@media screen and (max-width: 768px){
+
+    .showcase {
+        height: auto;
+    }
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid,
+    .footer .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase-form{
+        justify-self: center;
+        width: 340px;
+    }
+     
+    .cli .grid >*:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .showcase-form {
+        width: 300px;
+    }
+
+    
+}
